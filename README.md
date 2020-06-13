@@ -61,6 +61,24 @@ to run the application. Open a browser window and go to
 ```
 https://localhost:3000
 ```
+
+![Step 1](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image1.PNG)
+
+
+![Step 2](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image2.PNG)
+
+
+![Step 3](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image3.PNG)
+
+
+![Step 4](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image4.PNG)
+
+
+![Step 5](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image5.PNG)
+
+
+![Step 6](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image6.PNG)
+
 ## Licence
 
 MIT License
