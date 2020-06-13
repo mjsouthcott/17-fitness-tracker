@@ -64,20 +64,27 @@ https://localhost:3000
 
 ![Step 1](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image1.PNG)
 
+To create a workout, click "New Workout".
 
 ![Step 2](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image2.PNG)
 
+To add an exercise, select an exercise type from the "Exercise Type" dropdown.
 
 ![Step 3](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image3.PNG)
 
+To add a resistance exercise, enter the exercise name, weight, number of sets, number of reps and duration, and click "Add Exercise".
 
 ![Step 4](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image4.PNG)
 
+To add a cardio exercise, enter the name, distance and duration, and click "Add Exercise". Add a few more exercises and click "Complete" to finish creating the workout.
 
 ![Step 5](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image5.PNG)
 
+You'll now be presented with a summary of the workout you just created. To view the workout dashboard, click "Workout Dashboard".
 
 ![Step 6](https://github.com/mjsouthcott/17-fitness-tracker/blob/master/demo/image6.PNG)
+
+You'll now be presented with a number of graphs summarizing your workouts.
 
 ## Licence
 
