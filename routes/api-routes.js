@@ -9,8 +9,17 @@ router.get('/api/workouts', (req, res) => {
       date: -1,
     })
     .populate("exercises")
-    .then((dbWorkout) => res.json(dbWorkout))
-    .catch((err) => res.status(400).json(err))
+    .then(dbWorkout => {
+      dbWorkout.forEach(workout => {
+        let totalDuration = 0
+        workout.exercises.forEach(exercise => {
+          totalDuration += exercise.duration
+        })
+        workout.totalDuration = totalDuration
+      })
+      res.json(dbWorkout)
+    })
+    .catch(err => res.status(400).json(err))
 })
 
 // Route to add exercise
@@ -25,12 +34,12 @@ router.put('/api/workouts/:id', (req, res) => {
       },
       {
         $push: {
-          exercises: exercise._id,
+          exercises: exercise._id
         }
       }
     )
-    .then((dbWorkout) => res.json(dbWorkout))
-    .catch((err) => res.status(400).json(err))
+    .then(dbWorkout => res.json(dbWorkout))
+    .catch(err => res.status(400).json(err))
 })
 
 // Route to create workout
@@ -41,8 +50,8 @@ router.post('/api/workouts', (req, res) => {
   });
   workout
     .save()
-    .then((dbWorkout) => res.status(201).json(dbWorkout))
-    .catch((err) => res.status(400).json(err))
+    .then(dbWorkout => res.status(201).json(dbWorkout))
+    .catch(err => res.status(400).json(err))
 })
 
 // Route to get workouts in range
@@ -53,8 +62,8 @@ router.get('/api/workouts/range', (req, res) => {
       date: -1,
     })
     .populate("exercises")
-    .then((dbWorkout) => res.json(dbWorkout))
-    .catch((err) => res.status(400).json(err))
+    .then(dbWorkout => res.json(dbWorkout))
+    .catch(err => res.status(400).json(err))
 })
 
 module.exports = router

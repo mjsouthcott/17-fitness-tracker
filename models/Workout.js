@@ -4,16 +4,11 @@ const Schema = mongoose.Schema
 const WorkoutSchema = new Schema({
   day: { type: Date },
   exercises: [{ type: Schema.Types.ObjectId, ref: 'Exercise'}],
-  totalDuration: { type: Number }
+  totalDuration: {
+    type: Number,
+    default: 0
+  }
 })
-
-WorkoutSchema.methods.setTotalDuration = function () {
-  let totalDuration = 0
-  this.exercises.forEach(exercise => {
-    sum += exercise.duration
-  })
-  this.totalDuration = totalDuration
-}
 
 const Workout = mongoose.model('Workout', WorkoutSchema)
 
