@@ -45,7 +45,7 @@ git clone
 ```
 followed by the copied URL.
 
-To launch the deployed application, click the following link: .
+To launch the deployed application, click the following link: https://infinite-wildwood-90953.herokuapp.com/.
 
 ## Usage
 
