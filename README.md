@@ -17,7 +17,7 @@
 
 ## Description
 
-This is a web application that allows users view, create and track daily workouts. It is fully responsive and uses MongoDB in the back-end.
+This is a web application that allows users to view, create and track daily workouts. It is fully responsive and uses MongoDB in the back-end.
 
 ## Technologies Used
 
